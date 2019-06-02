@@ -183,7 +183,7 @@ class App extends Component {
         this.state.input)
       .then(response => {
         if (response) {
-          fetch('https://damp-eyrie-95004.herokuapp.com/imageurl', {
+          fetch('/imageurl', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
