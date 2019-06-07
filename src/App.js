@@ -121,7 +121,6 @@ const particlesOptions = {
 }
 
 const initialState = {
-  {
     input: '',
     imageUrl: '',
     box: {},
