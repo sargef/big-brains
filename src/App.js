@@ -196,7 +196,7 @@ class App extends Component {
             })
         this.displayFaceBox(this.calculateFaceLocation(response))
       }
-    })}
+    })
       .catch(err => console.log(err));
   }
 
@@ -207,7 +207,7 @@ class App extends Component {
       this.setState({isSignedIn: true})
     }
     this.setState({route: route});
-  };
+  }
 
   render() {
     const { isSignedIn, imageUrl, route, box } = this.state;
