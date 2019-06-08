@@ -175,7 +175,7 @@ class App extends Component {
 
   onButtonSubmit =() => {
     this.setState({imageUrl: this.state.input})
-    fetch('https://bigbrains101back.herokuapp.com/imageurl', {
+    fetch('PASTE_YOUR_APP_BACKEND_WEBSITE_ADDRESS_HERE/imageurl', {
         method: 'post',
         headers: {'Content-type': 'application/json'},
         body:JSON.stringify({
