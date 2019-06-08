@@ -175,7 +175,7 @@ class App extends Component {
 
   onButtonSubmit =() => {
     this.setState({imageUrl: this.state.input})
-    fetch('https://bigbrainapp.herokuapp.com/imageurl', {
+    fetch('https://bigbrains101back.herokuapp.com/imageurl', {
         method: 'post',
         headers: {'Content-type': 'application/json'},
         body:JSON.stringify({
@@ -185,7 +185,7 @@ class App extends Component {
     .then(response => response.json())
     .then(response => {
       if(response) {
-        fetch('https://bigbrainapp.herokuapp.com/image', {
+        fetch('https://bigbrains101back.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-type': 'application/json'},
           body:JSON.stringify({
