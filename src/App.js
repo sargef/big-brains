@@ -185,7 +185,7 @@ class App extends Component {
     .then(response => response.json())
     .then(response => {
       if(response) {
-        fetch('https://bigbrains101back.herokuapp.com/image', {
+        fetch('PASTE_YOUR_APP_BACKEND_WEBSITE_ADDRESS_HERE/image', {
           method: 'put',
           headers: {'Content-type': 'application/json'},
           body:JSON.stringify({
